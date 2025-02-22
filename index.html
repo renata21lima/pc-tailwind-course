@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,55 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>LandWind</title>
 </head>
-<body>
-    <header class="mx-20 w-full flex items-center justify-between">
-        <div class="">
-            <img src="./src/assets/icons/logo.svg" alt="Logo">
-            <h1>LandWind</h1>
+
+<body class="bg-white">
+    <header class="mx-20 h-22 flex items-center justify-between py-6">
+        <div class="flex justify-items-start gap-8 items-center">
+            <div class="flex gap-3 items-center justify-center">
+                <img src="./src/assets/icons/logo.svg" alt="Logo">
+                <h1 class="text-gray-900 text-2xl font-semibold">LandWind</h1>
+            </div>
+            <nav class="flex gap-8">
+                <a class="text-gray-900 text-base font-medium" href="">Company</a>
+                <a class="text-gray-900 text-base font-medium" href="">Marketplace</a>
+                <a class="text-gray-900 text-base font-medium" href="">Features</a>
+                <a class="text-gray-900 text-base font-medium" href="">Team</a>
+                <a class="text-gray-900 text-base font-medium" href="">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <a href="">Company</a>
-            <a href="">Marketplace</a>
-            <a href="">Features</a>
-            <a href="">Team</a>
-            <a href="">Contact</a>
-        </nav>
-        <div>
-            <button type="button">Login</button>
-            <button type="button">Get Started</button>
+        <div class="flex gap-4 justify-center items-center">
+            <button type="button" class="text-gray-900 text-sm font-medium">Login</button>
+            <button type="button" class="bg-indigo-500 hover:bg-fuchsia-500 rounded-lg py-2 px-3 text-white">Get
+                Started</button>
         </div>
     </header>
+    <main class="flex gap-3 mx-20 py-16 justify-center items-center">
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-6">
+                <h1 class="text-6xl text-gray-900 font-black leading-none">Building digital <br> products & brands.</h1>
+                <p class="text-gray-500 text-xl font-normal">Here at flowbite we focus on markets where technology,
+                    innovation, and capital can unlock long-term
+                    value and drive economic growth.</p>
+            </div>
+            <div class="flex gap-4">
+                <button type="button"
+                    class="text-base font-medium bg-indigo-500 hover:bg-fuchsia-500 rounded-lg py-2 px-3 text-white">Start
+                    30 day free trial</button>
+                <button type="button"
+                    class="border-solid border-2 rounded-lg border-gray-200 py-3 px-5 text-base font-medium">Pricing &
+                    FAQ</button>
+            </div>
+        </div>
+        <img src="./src/assets/images/marketing-strategy 1.png" width="532px" height="416px" alt="">
+    </main>
+    <section class="flex g-25">
+        <img src="./src/assets/images/Google.png"    alt="Google">
+        <img src="./src/assets/images/Microsoft.png" alt="Microsoft">
+        <img src="./src/assets/images/Spotify.png"   alt="Spotify">
+        <img src="./src/assets/images/Mailchimp.png" alt="Mailchimp">
+        <img src="./src/assets/images/Airbnb.png"    alt="Airbnb">
+        <img src="./src/assets/images/uber.png"      alt="Uber">
+    </section>
 </body>
+
 </html>
